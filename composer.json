@@ -1,0 +1,26 @@
+{
+    "name": "lukapeharda/multitenancy",
+    "description": "A single DB multitenancy package for Laravel based on subdomain routing.",
+    "license": "MIT",
+    "keywords": ["laravel", "tenant", "tenancy", "multitenant", "multitenancy", "saas"],
+    "authors": [
+        {
+            "name": "Luka Peharda",
+            "email": "luka.peharda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/http": "~5.3",
+        "illuminate/support": "~5.3",
+        "illuminate/database": "~5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "LukaPeharda\\MultiTenancy\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    }
+}
