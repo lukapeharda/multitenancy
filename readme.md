@@ -1,8 +1,8 @@
-# Cookie Guard
+# MultiTenancy
 
 ## Introduction
 
-MultiTenancy is a Laravel sigle DB multitenancy package based on subdomain routing.
+MultiTenancy is a Laravel single DB multitenancy package based on subdomain routing.
 
 ## Installation
 
@@ -48,4 +48,4 @@ $tenantId = context('id');
 
 ## License
 
-Cookie Guard is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+MultiTenancy is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
