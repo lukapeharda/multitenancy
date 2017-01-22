@@ -9,7 +9,7 @@ MultiTenancy is a Laravel single DB multitenancy package based on subdomain rout
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-$ composer require lukapeharda/multitenancy
+composer require lukapeharda/multitenancy
 ```
 
 Add the service provider to `config/app.php` in the `providers` array.
@@ -21,7 +21,7 @@ LukaPeharda\MultiTenancy\Providers\ContextServiceProvider::class,
 Publish the config file and modify its params to fit your needs and installation.
 
 ```bash
-$ php artisan vendor:publish --provider="LukaPeharda\MultiTenancy\ContextServiceProvider"
+php artisan vendor:publish --provider="LukaPeharda\MultiTenancy\Providers\ContextServiceProvider"
 ```
 
 ## Usage

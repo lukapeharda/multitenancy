@@ -18,7 +18,7 @@ class ContextServiceProvider extends ServiceProvider
     {
         if (function_exists('config_path')) {
             $this->publishes([
-                realpath(__DIR__.'/../config/multitenancy.php') => config_path('multitenancy.php'),
+                realpath(__DIR__.'/../../config/multitenancy.php') => config_path('multitenancy.php'),
             ]);
         }
 
