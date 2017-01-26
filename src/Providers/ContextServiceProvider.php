@@ -54,6 +54,11 @@ class ContextServiceProvider extends ServiceProvider
 
         $subdomain = str_replace('.' . $domainBase, '', $domain);
 
+        // If there is no subdomain don't look for the context
+        if ($subdomain === $domainBase) {
+            return;
+        }
+
         $tenant = $tenantObject->where('subdomain', $subdomain)->first();
 
         // If no website is found abort
